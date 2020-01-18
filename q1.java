@@ -14,6 +14,7 @@ public class PE_1
         sum+=i;
     }
     System.out.println("Sum= "+sum);
+    sc.close();
   }
 }
 
