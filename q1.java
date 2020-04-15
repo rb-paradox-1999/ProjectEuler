@@ -7,13 +7,13 @@ public class PE_1
   {
     Scanner sc=new Scanner(System.in);
     int n=sc.nextInt();   //number to be input
-    int sum=0;    //output parameter to display sum
-    for(int i=1;i<n;i++)
-    {
-        if(i%3==0 || i%5==0)
-        sum+=i;
-    }
-    System.out.println("Sum= "+sum);
+    int temp=n/3;
+    int sumof3=3*(n*(n+1)/2);
+    temp=n/5;
+    int sumof5=5*(n*(n+1)/2);
+    temp=n/15;
+    int sumof15=15*(n*(n+1)/2);
+    System.out.println("Sum= "+(sumof3+sumof5-sumof15));
     sc.close();
   }
 }
